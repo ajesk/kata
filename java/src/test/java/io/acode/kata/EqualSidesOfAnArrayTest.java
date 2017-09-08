@@ -33,6 +33,6 @@ public class EqualSidesOfAnArrayTest {
         assertEquals(3, EqualSidesOfAnArray.findEvenIndex(testArray1));
         assertEquals(1, EqualSidesOfAnArray.findEvenIndex(testArray2));
         assertEquals(0, EqualSidesOfAnArray.findEvenIndex(testArray3));
-        assertEquals(0, EqualSidesOfAnArray.findEvenIndex(emptyArray));
+        assertEquals(-1, EqualSidesOfAnArray.findEvenIndex(emptyArray));
     }
 }

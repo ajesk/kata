@@ -58,7 +58,9 @@ public class AreTheyTheSameTest {
         System.out.println(Arrays.toString(negativeA.toArray()));
         System.out.println(Arrays.toString(negativeB.toArray()));
         assert AreTheyTheSame.checkSqr(negativeA, negativeB);
-        assert !AreTheyTheSame.checkSqrt(negativeA, negativeB);
-        assert !AreTheyTheSame.comp(negative1, negative2);
+        assert !AreTheyTheSame.checkSqr(negativeB, negativeA);
+        assert AreTheyTheSame.checkSqrt(negativeA, negativeB);
+        assert !AreTheyTheSame.checkSqrt(negativeB, negativeA);
+        assert AreTheyTheSame.comp(negative1, negative2);
     }
 }
