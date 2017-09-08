@@ -1,6 +1,7 @@
 package io.acode.kata;
 
 import java.util.Arrays;
+import java.util.stream.Collectors;
 
 /**
  * Short Intro
@@ -73,10 +74,10 @@ import java.util.Arrays;
 
  Some music to get in the mood for this kata :
  */
-public class StreetFighter {
+class StreetFighter {
 
     public static String[] streetFighterSelection(String[][] fighters, int[] position, String[] moves){
-        return (String[]) Arrays.stream(moves).map(mv -> {
+        return Arrays.stream(moves).map(mv -> {
             switch (mv) {
                 case "up":
                     if (position[1] > 0) {position[1]--;}
@@ -85,13 +86,15 @@ public class StreetFighter {
                     if (position[1] < fighters.length - 1) position[1]++;
                     break;
                 case "left":
-                    if (position[0] == 0) position[0] = fighters[0].length - 1; else position[0]--;
+                    if (position[0] == 0) position[0] = fighters[0].length - 1;
+                    else position[0]--;
                     break;
                 case "right":
-                    if (position[0] == fighters[0].length - 1) position[0] = 0; else position[0]++;
+                    if (position[0] == fighters[0].length - 1) position[0] = 0;
+                    else position[0]++;
                     break;
             }
             return fighters[position[1]][position[0]];
-        }).toArray();
+        }).collect(Collectors.toList()).toArray(new String[]{});
     }
 }
