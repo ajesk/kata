@@ -4,39 +4,32 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Elevator {
-    int moves = 0;
-    int currentWeight = 0, totalPeople = 0, max, capacity;
-    List<Integer> targetFloors = new ArrayList<>();
+    private int moves = 0;
+    private int currentWeight = 0, totalPeople = 0, max, capacity;
+    private List<Integer> targetFloors = new ArrayList<>();
 
-    boolean isFull(int additionalWeight) {
-        return currentWeight + additionalWeight >= max || totalPeople + 1 >= capacity;
+    private boolean isFull(int additionalWeight) {
+        return currentWeight + additionalWeight >= max || totalPeople == capacity;
     }
 
-    void addRider(int weight, int floor) {
+    private void addRider(int weight, int floor) {
         currentWeight += weight;
+        totalPeople++;
         targetFloors.add(floor);
     }
 
-    int getFloors() {
-        int numOfDifferentVals = 0;
-
+    private int getFloors() {
         ArrayList<Integer> uniqueFloors = new ArrayList<>();
 
-        for(int i = 0; i < targetFloors.size(); i++) {
-            if(!uniqueFloors.contains(targetFloors.get(i))){
-                uniqueFloors.add(targetFloors.get(i));
+        for (Integer floor: targetFloors) {
+            if (!uniqueFloors.contains(floor)) {
+                uniqueFloors.add(floor);
             }
         }
-        if(uniqueFloors.size()==1) {
-            numOfDifferentVals = 0;
-        } else {
-            numOfDifferentVals = uniqueFloors.size();
-        }
-
-        return numOfDifferentVals;
+        return uniqueFloors.size();
     }
 
-    long sendElevator() {
+    private long sendElevator() {
         long totalFloors = getFloors() + 1;
         currentWeight = 0;
         totalPeople = 0;
@@ -44,7 +37,7 @@ public class Elevator {
         return totalFloors;
     }
 
-    public int solution(int[] weights, int[] targetFloors, int floors, int maxWeight, int capacity) {
+    public int solution(int[] weights, int[] targetFloors, int floors, int capacity, int maxWeight) {
         this.max = maxWeight;
         this.capacity = capacity;
 
@@ -54,7 +47,6 @@ public class Elevator {
             }
             addRider(weights[i], targetFloors[i]);
         }
-
         return moves += sendElevator();
     }
 }
