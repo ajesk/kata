@@ -1,4 +1,4 @@
-package io.acode.kata;
+package io.acode.codility;
 
 import java.util.ArrayList;
 import java.util.List;

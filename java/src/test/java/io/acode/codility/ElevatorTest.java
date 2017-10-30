@@ -1,5 +1,6 @@
-package io.acode.kata;
+package io.acode.codility;
 
+import io.acode.codility.Elevator;
 import org.junit.Test;
 import static com.google.common.truth.Truth.assertThat;
 

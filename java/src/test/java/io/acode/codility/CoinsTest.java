@@ -1,5 +1,6 @@
-package io.acode.kata;
+package io.acode.codility;
 
+import io.acode.codility.Coins;
 import org.junit.Test;
 
 public class CoinsTest {

@@ -1,9 +1,9 @@
-package io.acode.kata;
+package io.acode.codility;
 
+import io.acode.codility.Arithmetic;
 import org.junit.Test;
 
 import java.util.Arrays;
-import java.util.List;
 
 import static com.google.common.truth.Truth.assertThat;
 
