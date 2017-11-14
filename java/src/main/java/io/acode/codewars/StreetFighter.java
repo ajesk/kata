@@ -1,4 +1,4 @@
-package io.acode.kata;
+package io.acode.codewars;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 
  Some of you might remember spending afternoons playing Street Fighter 2 in some Arcade back in the 90s or emulating it nowadays with the numerous emulators for retro consoles.
 
- Can you solve this kata? Suuure-You-Can!
+ Can you solve this codewars? Suuure-You-Can!
 
- UPDATE: a new kata's harder version is available here.
+ UPDATE: a new codewars's harder version is available here.
 
  The Kata
 
@@ -72,7 +72,7 @@ import java.util.stream.Collectors;
  ['E.Honda', 'Chun Li', 'Ken', 'M.Bison', 'Sagat', 'Dhalsim', 'Sagat']
  OFF-TOPIC
 
- Some music to get in the mood for this kata :
+ Some music to get in the mood for this codewars :
  */
 class StreetFighter {
 

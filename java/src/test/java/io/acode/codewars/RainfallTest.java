@@ -1,4 +1,4 @@
-package io.acode.kata;
+package io.acode.codewars;
 
 public class RainfallTest {
 }

@@ -1,4 +1,4 @@
-package io.acode.kata;
+package io.acode.codewars;
 
 /**
  * A Hamming number is a positive integer of the form 2i3j5k, for some non-negative integers i, j, and k.

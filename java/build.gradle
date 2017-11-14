@@ -1,4 +1,4 @@
-group 'kata'
+group 'codewars'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

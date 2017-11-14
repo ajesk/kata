@@ -1,10 +1,10 @@
-package io.acode.kata;
+package io.acode.codewars;
 
 import java.util.*;
 import java.util.stream.IntStream;
 
 /**
- * If you have completed the Tribonacci sequence kata, you would know by now that mister Fibonacci has at least a
+ * If you have completed the Tribonacci sequence codewars, you would know by now that mister Fibonacci has at least a
  * bigger brother. If not, give it a quick look to get how things work.
  *
  * Well, time to expand the family a little more: think of a Quadribonacci starting with a signature of 4 elements and

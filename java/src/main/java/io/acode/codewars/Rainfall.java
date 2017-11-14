@@ -1,4 +1,4 @@
-package io.acode.kata;
+package io.acode.codewars;
 
 /**
  * data and data1 are two strings with rainfall records of a few cities for months from
