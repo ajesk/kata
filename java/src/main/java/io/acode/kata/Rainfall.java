@@ -22,4 +22,5 @@ package io.acode.kata;
  data and data1 are adapted from http://www.worldclimate.com
  */
 public class Rainfall {
+    // todo solve me
 }
