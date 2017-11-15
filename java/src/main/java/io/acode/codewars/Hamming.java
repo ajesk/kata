@@ -1,5 +1,7 @@
 package io.acode.codewars;
 
+import java.util.PriorityQueue;
+
 /**
  * A Hamming number is a positive integer of the form 2i3j5k, for some non-negative integers i, j, and k.
  *
@@ -17,23 +19,17 @@ package io.acode.codewars;
  * Your code should be able to compute all of the smallest 5,000 (Clojure: 2000) Hamming numbers without timing out.
  */
 public class Hamming {
-    public int getDividens(int n, int dividend) {
-        int ret = 0;
-        if (n >= dividend) {
-            ret = n % dividend;
-            n /= dividend;
-        }
-        return ret;
+    static int dividends(int n, int dividend) {
+        return n >= dividend ? n / dividend : 0;
     }
 
     public static long hamming(int n) {
-        // TODO: Program me
-
-        int fives = n >= 5 ? n % 5 : 0;
-        n /= 5;
-        int threes = n >= 3 ? n % 3 : 0;
-        n /= 3;
-        int twos = n >= 2 ? n % 2 : 0;
-        return (2^twos)*(3^threes)*(5^fives);
+        PriorityQueue<Integer> quququ = new PriorityQueue<>();
+        int fives = dividends(n, 5);
+        n = n > 0 ? n % 5 : n;
+        int threes = dividends(n, 3);
+        n = n > 0 ? n % 3 : n;
+        int twos = dividends(n, 2);
+        return (long)(Math.pow(2, twos)*Math.pow(3, threes)*Math.pow(5, fives));
     }
 }
