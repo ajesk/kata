@@ -1,10 +1,8 @@
-package io.acode.kata;
+package io.acode.codewars;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 /**
  * In this Kata, you will implement The Luhn Algorithm, which is used to help validate credit card numbers.
