@@ -45,7 +45,6 @@ public class SubstringWithMultipleWords {
             }
             if (workingList.isEmpty()) indeces.add(i * wordSize);
         }
-
         return indeces;
     }
 }

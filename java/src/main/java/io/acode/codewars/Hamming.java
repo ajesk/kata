@@ -17,8 +17,23 @@ package io.acode.codewars;
  * Your code should be able to compute all of the smallest 5,000 (Clojure: 2000) Hamming numbers without timing out.
  */
 public class Hamming {
+    public int getDividens(int n, int dividend) {
+        int ret = 0;
+        if (n >= dividend) {
+            ret = n % dividend;
+            n /= dividend;
+        }
+        return ret;
+    }
+
     public static long hamming(int n) {
         // TODO: Program me
-        return 0;
+
+        int fives = n >= 5 ? n % 5 : 0;
+        n /= 5;
+        int threes = n >= 3 ? n % 3 : 0;
+        n /= 3;
+        int twos = n >= 2 ? n % 2 : 0;
+        return (2^twos)*(3^threes)*(5^fives);
     }
 }
