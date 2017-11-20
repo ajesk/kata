@@ -1,5 +1,11 @@
 package io.acode.codewars;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 /**
  * data and data1 are two strings with rainfall records of a few cities for months from
  * January to December. The records of towns are separated by \n. The name of each town is followed by :.
@@ -22,5 +28,49 @@ package io.acode.codewars;
  data and data1 are adapted from http://www.worldclimate.com
  */
 public class Rainfall {
-    // todo solve me
+
+    /**
+     * Returns a collection object with the data broken down.
+     * @param data
+     * @return - Map<City, List<Temps>>
+     */
+    static Map<String, List<String>> cityBreakdown(String data) {
+        Map<String, List<String>> breakdown = new HashMap<>();
+        Arrays.stream(data.split("\n"))
+                .forEach(line -> {
+                    String[] dataSplit = line.split(":");
+                    String city = dataSplit[0], values = dataSplit[1];
+                    breakdown.put(city, Arrays.stream(values.split(","))
+                            .map(monthData -> monthData.split(" ")[1])
+                            .collect(Collectors.toList()));
+                });
+        return breakdown;
+    }
+
+    public static double mean(String town, String data) {
+        try {
+            return cityBreakdown(data)
+                    .get(town)
+                    .stream()
+                    .mapToDouble(Double::parseDouble)
+                    .average()
+                    .getAsDouble();
+        } catch (Exception e) {
+            return -1;
+        }
+
+    }
+
+    // This is terribly inefficient since it processes the data string twice. Was just too lazy to tie the methods
+    // together.
+    public static double variance(String town, String data) {
+        double rainMean = mean(town, data);
+        if (rainMean == -1) return rainMean;
+        return cityBreakdown(data)
+                .get(town)
+                .stream()
+                .mapToDouble(val -> Math.pow(Double.parseDouble(val) - rainMean, 2))
+                .average()
+                .getAsDouble();
+    }
 }
