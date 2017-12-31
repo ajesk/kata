@@ -20,7 +20,7 @@ import java.util.List;
  *
  * For k = 3, you should return: 3->2->1->4->5
  */
-public class ReverveNodesInGroups {
+public class ReverseNodesInGroups {
 
     /**
      * This is not an optimal solution just a simple one. The biggest boon would be gained by doing away with the

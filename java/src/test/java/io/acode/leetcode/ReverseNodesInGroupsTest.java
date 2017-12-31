@@ -9,7 +9,7 @@ public class ReverseNodesInGroupsTest extends TestUtils {
 
     private ListNode node1;
 
-    private ReverveNodesInGroups rnig = new ReverveNodesInGroups();
+    private ReverseNodesInGroups rnig = new ReverseNodesInGroups();
 
     @Before
     public void setUp() {
