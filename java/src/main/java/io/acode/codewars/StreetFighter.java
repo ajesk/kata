@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
 
  Instead, if I try to go further up from the upmost or further down from the downmost, I'll just stay where I am located (examples: you can't go lower than lowest row: Ken, Chun Li, Zangief, Dhalsim, Sagat and M.Bison in the above image; you can't go upper than highest row: Ryu, E.Honda, Blanka, Guile, Balrog and Vega in the above image).
 
- Test
+ TestClass
 
  For this easy version the fighters grid layout and the initial position will always be the same in all tests, only the list of moves change.
 
