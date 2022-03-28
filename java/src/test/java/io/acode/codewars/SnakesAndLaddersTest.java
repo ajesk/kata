@@ -38,7 +38,7 @@ public class SnakesAndLaddersTest {
   public void testLadder() {
     SnakesAndLadders game = new SnakesAndLadders();
     assertEquals("Player 1 is on square 38", game.play(2, 0));
-    assertEquals("Player 2 is on square 38", game.play(2, 0));
+    assertEquals("Player 2 is on square 60", game.play(64, 0));
   }
 
   @Test

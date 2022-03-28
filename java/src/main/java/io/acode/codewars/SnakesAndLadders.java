@@ -3,9 +3,11 @@ package io.acode.codewars;
 import java.util.AbstractMap;
 import java.util.Map;
 
+/**
+ * It should be noted that this solution, while not the best broken out code
+ * was put together using strict TDD
+ */
 public class SnakesAndLadders {
-  private int turn = 0;
-  private final int[] scores;
   private final Map<Integer, Integer> modifiers = Map.ofEntries(
     new AbstractMap.SimpleEntry<>(2, 38),
     new AbstractMap.SimpleEntry<>(7, 14),
@@ -29,6 +31,8 @@ public class SnakesAndLadders {
     new AbstractMap.SimpleEntry<>(95, 75),
     new AbstractMap.SimpleEntry<>(99, 80)
   );
+  private int turn = 0;
+  private final int[] scores;
 
   public SnakesAndLadders(int players) {
     this.scores = new int[players];
