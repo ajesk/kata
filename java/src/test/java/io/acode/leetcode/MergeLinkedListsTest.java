@@ -1,5 +1,6 @@
 package io.acode.leetcode;
 
+import io.acode.leetcode.datastructures.ListNode;
 import io.acode.util.TestUtils;
 import org.junit.Before;
 import org.junit.Test;

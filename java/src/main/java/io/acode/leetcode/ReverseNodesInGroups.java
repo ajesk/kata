@@ -1,5 +1,7 @@
 package io.acode.leetcode;
 
+import io.acode.leetcode.datastructures.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,13 +1,13 @@
-package io.acode.leetcode;
+package io.acode.leetcode.datastructures;
 
 import java.util.Arrays;
 
-class ListNode {
-    int val = 0;
-    ListNode next;
-    ListNode(int x) { val = x; }
-
-    ListNode(int... nodeVals) {
+public class ListNode {
+    public int val = 0;
+    public ListNode next;
+    public ListNode(int x) { val = x; }
+    public ListNode(int val, ListNode next) { this.val = val; this.next = next;}
+    public ListNode(int... nodeVals) {
         if (nodeVals.length > 0) val = nodeVals[0];
         if (nodeVals.length > 1) next = new ListNode(Arrays.copyOfRange(nodeVals, 1, nodeVals.length));
     }
