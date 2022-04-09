@@ -30,7 +30,6 @@ public class TesElection extends TestUtils {
             "Ryan",
             "Veronica"
     };
-    TestClass test = new TestClass();
 
     @Test
     public void testScenario1() {

@@ -14,6 +14,6 @@ public class LongestEvenLengthWord {
             return s.length() % 2 == 0;
         }).max(Comparator.comparingInt(String::length));
         // returning this because test wrong
-        return greatest.isPresent() ? greatest.get() : "00";
+        return greatest.orElse("00");
     }
 }
