@@ -31,9 +31,9 @@ public class RomanToNumberTest {
 
   @Test
   public void testPutItAllTogether() {
-//    assertEquals(3, target.romanToInt("III"));
-//    assertEquals(58, target.romanToInt("LVIII"));
-//    assertEquals(1994, target.romanToInt("MCMXCIV"));
+    assertEquals(3, target.romanToInt("III"));
+    assertEquals(58, target.romanToInt("LVIII"));
+    assertEquals(1994, target.romanToInt("MCMXCIV"));
     assertEquals(621, target.romanToInt("DCXXI"));
   }
 }
