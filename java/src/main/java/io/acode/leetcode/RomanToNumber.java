@@ -14,10 +14,7 @@ public class RomanToNumber {
   );
 
   private boolean isComposite(String[] chars, int index) {
-    return
-      (chars[index].equals("I") && (chars[index + 1].equals("V") || chars[index + 1].equals("X"))) ||
-      (chars[index].equals("X") && (chars[index + 1].equals("C") || chars[index + 1].equals("L"))) ||
-      (chars[index].equals("C") && (chars[index + 1].equals("D") || chars[index + 1].equals("M")));
+    return numerals.get(chars[index]) < numerals.get(chars[index + 1]);
   }
 
   public int romanToInt(String s) {
@@ -27,8 +24,7 @@ public class RomanToNumber {
     for (int i = 0; i < s.length(); i++) {
       String numeral = chars[i];
       if (i != s.length() - 1 && isComposite(chars, i)) {
-        total += numerals.get(chars[i + 1]) - numerals.get(numeral);
-        i++;
+        total -= numerals.get(numeral);
         continue;
       }
       total += numerals.get(chars[i]);
