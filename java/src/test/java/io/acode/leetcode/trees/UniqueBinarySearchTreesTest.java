@@ -1,5 +1,6 @@
-package io.acode.leetcode;
+package io.acode.leetcode.trees;
 
+import io.acode.leetcode.datastructures.trees.UniqueBinarySearchTrees;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

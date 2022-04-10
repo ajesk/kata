@@ -1,4 +1,6 @@
-package io.acode.leetcode.datastructures;
+package io.acode.leetcode.datastructures.trees;
+
+import io.acode.leetcode.datastructures.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

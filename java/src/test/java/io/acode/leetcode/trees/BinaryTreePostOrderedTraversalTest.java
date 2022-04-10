@@ -1,5 +1,6 @@
-package io.acode.leetcode;
+package io.acode.leetcode.trees;
 
+import io.acode.leetcode.datastructures.trees.BinaryTreePostOrderedTraversal;
 import io.acode.leetcode.datastructures.TreeNode;
 import org.junit.Test;
 
@@ -7,14 +8,14 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class BinaryTreePreorderedTraversalTest {
-  BinaryTreePreorderedTraversal target = new BinaryTreePreorderedTraversal();
+public class BinaryTreePostOrderedTraversalTest {
+  BinaryTreePostOrderedTraversal target = new BinaryTreePostOrderedTraversal();
 
   @Test
   public void testBasic() {
     TreeNode node = new TreeNode(1);
 
-    assertEquals(List.of(1), target.preorderTraversal(node));
+    assertEquals(List.of(1), target.postOrderTraversal(node));
   }
 
   @Test
@@ -22,21 +23,21 @@ public class BinaryTreePreorderedTraversalTest {
     TreeNode node1 = new TreeNode(1, new TreeNode(2), null);
     TreeNode node2 = new TreeNode(1, null, new TreeNode(3));
 
-    assertEquals(List.of(1, 2), target.preorderTraversal(node1));
-    assertEquals(List.of(1, 3), target.preorderTraversal(node2));
+    assertEquals(List.of(2, 1), target.postOrderTraversal(node1));
+    assertEquals(List.of(3, 1), target.postOrderTraversal(node2));
   }
 
   @Test
   public void testWithBothChildren() {
     TreeNode node = new TreeNode(1, new TreeNode(2), new TreeNode(3));
 
-    assertEquals(List.of(1, 2, 3), target.preorderTraversal(node));
+    assertEquals(List.of(2, 3, 1), target.postOrderTraversal(node));
   }
 
   @Test
   public void testMultiDepth() {
     TreeNode node = new TreeNode(1, null, new TreeNode(3, new TreeNode(2), null));
 
-    assertEquals(List.of(1, 3, 2), target.preorderTraversal(node));
+    assertEquals(List.of(2, 3, 1), target.postOrderTraversal(node));
   }
 }

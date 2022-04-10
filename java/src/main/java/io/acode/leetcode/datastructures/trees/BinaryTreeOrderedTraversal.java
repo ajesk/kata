@@ -1,4 +1,4 @@
-package io.acode.leetcode;
+package io.acode.leetcode.datastructures.trees;
 
 import io.acode.leetcode.datastructures.TreeNode;
 

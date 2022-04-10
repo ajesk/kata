@@ -1,5 +1,6 @@
-package io.acode.leetcode;
+package io.acode.leetcode.trees;
 
+import io.acode.leetcode.datastructures.trees.BinaryTreeOrderedTraversal;
 import io.acode.leetcode.datastructures.TreeNode;
 import org.junit.Test;
 

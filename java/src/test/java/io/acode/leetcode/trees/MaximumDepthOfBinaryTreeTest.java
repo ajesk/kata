@@ -1,5 +1,6 @@
-package io.acode.leetcode;
+package io.acode.leetcode.trees;
 
+import io.acode.leetcode.datastructures.trees.MaximumDepthOfBinaryTree;
 import io.acode.leetcode.datastructures.TreeNode;
 import org.junit.Test;
 
