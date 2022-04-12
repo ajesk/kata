@@ -1,4 +1,4 @@
-package io.acode.leetcode.datastructures;
+package io.acode.leetcode.datastructures.tree;
 
 
 import java.util.Objects;

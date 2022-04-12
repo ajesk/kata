@@ -1,6 +1,6 @@
 package io.acode.leetcode.trees;
 
-import io.acode.leetcode.datastructures.TreeNode;
+import io.acode.leetcode.datastructures.tree.TreeNode;
 
 public class PathSum {
   public boolean hasPathSum(TreeNode root, int targetSum) {
