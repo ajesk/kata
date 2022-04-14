@@ -1,6 +1,7 @@
 package io.acode.leetcode.datastructures;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class ListNode {
     public int val = 0;
@@ -16,5 +17,18 @@ public class ListNode {
     public String toString() {
         if (next != null) return val + ", " + next.toString();
         return val + "";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ListNode listNode = (ListNode) o;
+        return val == listNode.val && Objects.equals(next, listNode.next);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(val, next);
     }
 }

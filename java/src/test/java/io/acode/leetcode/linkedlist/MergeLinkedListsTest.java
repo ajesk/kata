@@ -1,4 +1,4 @@
-package io.acode.leetcode;
+package io.acode.leetcode.linkedlist;
 
 import io.acode.leetcode.datastructures.ListNode;
 import io.acode.util.TestUtils;
