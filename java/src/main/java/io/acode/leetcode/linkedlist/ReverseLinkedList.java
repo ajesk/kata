@@ -2,7 +2,6 @@ package io.acode.leetcode.linkedlist;
 
 import io.acode.leetcode.datastructures.ListNode;
 
-import java.util.Queue;
 import java.util.Stack;
 
 public class ReverseLinkedList {

@@ -1,7 +1,6 @@
 package io.acode.codewars;
 
 import static com.google.common.truth.Truth.assertThat;
-import io.acode.util.TestUtils;
 import static org.junit.Assert.*;
 
 import org.junit.Test;

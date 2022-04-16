@@ -2,9 +2,6 @@ package io.acode.leetcode.linkedlist;
 
 import io.acode.leetcode.datastructures.ListNode;
 
-import java.util.Objects;
-import java.util.Stack;
-
 public class IntersectionOfTwoLinkedLists {
   public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
     ListNode pointerA = headA;
@@ -34,12 +31,10 @@ public class IntersectionOfTwoLinkedLists {
       }
     }
 
-
     while (pointerA != null && pointerB != null) {
       if (pointerA==pointerB) return pointerA;
       pointerA = pointerA.next;
       pointerB = pointerB.next;
-
     }
 
     return null;

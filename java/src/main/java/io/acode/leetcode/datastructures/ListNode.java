@@ -1,7 +1,6 @@
 package io.acode.leetcode.datastructures;
 
 import java.util.Arrays;
-import java.util.Objects;
 
 public class ListNode {
     public int val = 0;

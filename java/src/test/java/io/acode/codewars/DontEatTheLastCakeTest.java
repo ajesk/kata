@@ -1,6 +1,5 @@
 package io.acode.codewars;
 
-import static com.google.common.truth.Truth.assertThat;
 import org.junit.Test;
 
 public class DontEatTheLastCakeTest {

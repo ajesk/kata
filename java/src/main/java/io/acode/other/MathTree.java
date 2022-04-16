@@ -1,7 +1,6 @@
 package io.acode.other;
 
 import java.util.Arrays;
-import java.util.Stack;
 
 public class MathTree {
 

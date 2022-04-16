@@ -5,8 +5,6 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static com.google.common.truth.Truth.assertThat;
-
 public class ArithmeticTest {
 
     Arithmetic arithmetic = new Arithmetic();
