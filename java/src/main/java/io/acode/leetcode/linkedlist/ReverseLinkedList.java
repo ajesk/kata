@@ -1,26 +1,23 @@
 package io.acode.leetcode.linkedlist;
 
-import io.acode.leetcode.datastructures.ListNode;
+import io.acode.leetcode.datastructures.linkedlist.ListNode;
 
-import java.util.Stack;
 
 public class ReverseLinkedList {
-  Stack<ListNode> nodes = new Stack<>();
 
   public ListNode reverseList(ListNode head) {
     if (head == null) return null;
-    ListNode current = head;
+    ListNode current = head.next;
+    ListNode last = head;
+    if (current == null) return head;
 
-    while (current != null) {
-      nodes.push(current);
-      current = current.next;
+    last.next = null;
+    while (true) {
+      ListNode next = current.next; // store next node
+      current.next = last; // set next node equal to last
+      last = current; // move last pointer to next node
+      if (next == null) return current; // if you reach the end of the list return
+      current = next; // move current point to stored next node
     }
-
-    ListNode newHead = nodes.pop();
-    ListNode chainer = newHead;
-    while (!nodes.empty()) {
-//        chainer.next =
-    }
-    return null;
   }
 }

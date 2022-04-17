@@ -1,7 +1,6 @@
 package io.acode.leetcode.linkedlist;
 
-import io.acode.leetcode.datastructures.ListNode;
-import org.junit.Ignore;
+import io.acode.leetcode.datastructures.linkedlist.ListNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -11,21 +10,18 @@ public class ReverseLinkedListTest {
   ReverseLinkedList target = new ReverseLinkedList();
 
   @Test
-  @Ignore
   public void testBasic() {
     assertNull(target.reverseList(null));
-    assertEquals(new ListNode(1), target.reverseList(new ListNode(1)));
+    assertEquals(new ListNode(1).toString(), target.reverseList(new ListNode(1)).toString());
   }
 
   @Test
-  @Ignore
   public void test2NodeList() {
-    assertEquals(new ListNode(1, 2), target.reverseList(new ListNode(2, 1)));
+    assertEquals(new ListNode(1, 2).toString(), target.reverseList(new ListNode(2, 1)).toString());
   }
 
   @Test
-  @Ignore
   public void test3NodeList() {
-    assertEquals(new ListNode(1, 2, 3), target.reverseList(new ListNode(3, 2, 1)));
+    assertEquals(new ListNode(1, 2, 3).toString(), target.reverseList(new ListNode(3, 2, 1)).toString());
   }
 }

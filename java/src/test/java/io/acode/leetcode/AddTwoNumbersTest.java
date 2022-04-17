@@ -1,6 +1,6 @@
 package io.acode.leetcode;
 
-import io.acode.leetcode.datastructures.ListNode;
+import io.acode.leetcode.datastructures.linkedlist.ListNode;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

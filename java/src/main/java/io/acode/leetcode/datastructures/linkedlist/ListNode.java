@@ -1,4 +1,4 @@
-package io.acode.leetcode.datastructures;
+package io.acode.leetcode.datastructures.linkedlist;
 
 import java.util.Arrays;
 

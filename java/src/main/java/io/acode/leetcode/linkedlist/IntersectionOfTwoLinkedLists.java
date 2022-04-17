@@ -1,6 +1,6 @@
 package io.acode.leetcode.linkedlist;
 
-import io.acode.leetcode.datastructures.ListNode;
+import io.acode.leetcode.datastructures.linkedlist.ListNode;
 
 public class IntersectionOfTwoLinkedLists {
   public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
