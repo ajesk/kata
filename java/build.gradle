@@ -11,6 +11,5 @@ repositories {
 
 dependencies {
     testImplementation group: 'junit', name: 'junit', version: '4.12'
-    testImplementation "com.google.truth:truth:0.35"
 }
 targetCompatibility = JavaVersion.VERSION_16
