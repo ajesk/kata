@@ -1,4 +1,4 @@
-package io.acode.leetcode;
+package io.acode.leetcode.misc;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public class ZigZagConversion {
   public String convert(String s, int numRows) {
-    Queue[] queues = new Queue[numRows];
+    Queue<String>[] queues = new Queue[numRows];
 
     for (int i = 0; i < numRows; i++) {
       queues[i] = new LinkedBlockingQueue<>();

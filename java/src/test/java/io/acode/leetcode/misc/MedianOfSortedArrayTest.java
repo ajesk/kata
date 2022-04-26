@@ -1,4 +1,4 @@
-package io.acode.leetcode;
+package io.acode.leetcode.misc;
 
 import io.acode.util.TestUtils;
 import org.junit.Test;

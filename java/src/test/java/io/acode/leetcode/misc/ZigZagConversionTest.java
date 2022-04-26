@@ -1,5 +1,6 @@
-package io.acode.leetcode;
+package io.acode.leetcode.misc;
 
+import io.acode.leetcode.misc.ZigZagConversion;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
