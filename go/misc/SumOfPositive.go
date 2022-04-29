@@ -5,11 +5,9 @@
 // Note: if there is nothing to sum, the sum is default to 0.
 package main
 
-import "fmt"
-
-func main() {
-	fmt.Println(sumOfPositives([]int{3, 5, -1, 6}))
-}
+// func main() {
+// 	fmt.Println(sumOfPositives([]int{3, 5, -1, 6}))
+// }
 
 func sumOfPositives(numbers []int) (out int) {
 	out = 0

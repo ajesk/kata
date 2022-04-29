@@ -17,12 +17,10 @@
 // [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]
 package main
 
-import "fmt"
-
-func main() {
-	tri := [3]float64{1, 1, 1}
-	fmt.Println(tribonacci(tri[:], 1))
-}
+// func main() {
+// 	tri := [3]float64{1, 1, 1}
+// 	fmt.Println(tribonacci(tri[:], 1))
+// }
 
 func tribonacci(signature []float64, n int) []float64 {
 	var len int = len(signature)

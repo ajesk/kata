@@ -10,7 +10,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -20,9 +19,9 @@ var charScore = map[rune]int{
 	's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26,
 }
 
-func main() {
-	fmt.Println(high("yolo aaa yool"))
-}
+// func main() {
+// fmt.Println(high("yolo aaa yool"))
+// }
 
 func high(s string) (topWord string) {
 	words := strings.Split(s, " ")
