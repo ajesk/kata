@@ -1,6 +1,23 @@
 # kata
+
+## Purpose
+
+A project that contains all of my practice problems from various sources.
+
+Some resources used for prompts are:
+
+* Leetcode
+* Code Wars
+* Cracking the Coding Interview
+
+## Progress
+
+Feel free to check in on my progress at the following links.
+
+### Leetcode
+
+https://leetcode.com/ajesk/
+
+### Code Wars
+
 https://www.codewars.com/users/ajesk
-
-All solutions for my kata going forward will be posted here. I will also be using this to play with different libraries on occasion (example: Just started using truth over JUnit).
-
-I highly recommend that anyone who enjoys code and logical problems utilizes this website in a similar way.
