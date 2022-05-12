@@ -21,4 +21,9 @@ public class Node {
     this.val = val;
     this.neighbors = neighbors;
   }
+
+  public Node(int val, Node... neighbors) {
+    this.val = val;
+    this.neighbors = List.of(neighbors);
+  }
 }
