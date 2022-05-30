@@ -1,7 +1,6 @@
 package io.acode.codility;
 
-import io.acode.codility.Coins;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class CoinsTest {
     Coins coiness = new Coins();

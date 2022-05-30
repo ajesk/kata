@@ -1,9 +1,9 @@
 package io.acode.codewars;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static io.acode.codewars.FindTheUniqueNumber.findUniq;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FindTheUniqueNumberTest {
   private final double precision = 0.0000000000001;

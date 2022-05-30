@@ -1,7 +1,7 @@
 package io.acode.hackerrank;
 
 import io.acode.util.TestUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class TesElection extends TestUtils {
     String[] test1 = new String[] {

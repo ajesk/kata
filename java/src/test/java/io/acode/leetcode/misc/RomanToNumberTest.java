@@ -1,9 +1,9 @@
 package io.acode.leetcode.misc;
 
 import io.acode.leetcode.misc.RomanToNumber;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanToNumberTest {
   RomanToNumber target = new RomanToNumber();

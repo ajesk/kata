@@ -1,10 +1,10 @@
 package io.acode.other;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ReturnNumbersWithTwoDigitsTest {
 

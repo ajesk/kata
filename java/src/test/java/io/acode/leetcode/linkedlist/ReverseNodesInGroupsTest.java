@@ -1,12 +1,11 @@
 package io.acode.leetcode.linkedlist;
 
 import io.acode.leetcode.datastructures.linkedlist.ListNode;
-import io.acode.leetcode.linkedlist.ReverseNodesInGroups;
 import io.acode.util.TestUtils;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReverseNodesInGroupsTest extends TestUtils {
 
@@ -14,7 +13,7 @@ public class ReverseNodesInGroupsTest extends TestUtils {
 
   private final ReverseNodesInGroups rnig = new ReverseNodesInGroups();
 
-  @Before
+  @BeforeEach
   public void setUp() {
     node1 = new ListNode(1, 2, 3, 4, 5);
   }

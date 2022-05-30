@@ -1,9 +1,8 @@
 package io.acode.leetcode.bfs;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class Matrix01FailureTest {
   Matrix01Failure target = new Matrix01Failure();
@@ -41,13 +40,4 @@ public class Matrix01FailureTest {
       target.updateMatrix(new int[][]{{0, 0, 0}, {0, 1, 0}, {1, 1, 1}}));
   }
 
-  @Test
-  @Ignore
-  //This is where I fail...
-  public void testBigBoi() {
-    target.updateMatrix(new int[][]{{1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1},
-      {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1},
-      {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1}, {1, 1, 1},
-      {1, 1, 1}, {0, 0, 0}});
-  }
 }

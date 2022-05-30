@@ -1,10 +1,10 @@
 package io.acode.leetcode.stack;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.EmptyStackException;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class QueueUsingStacksTest {
 
@@ -27,10 +27,12 @@ public class QueueUsingStacksTest {
     assertEquals(1, target.peek());
   }
 
-  @Test(expected = EmptyStackException.class)
+  @Test
   public void peekShouldThrowEmptyStackException() {
-    QueueUsingStacks target = new QueueUsingStacks();
-    target.peek();
+    assertThrows(EmptyStackException.class, () -> {
+      QueueUsingStacks target = new QueueUsingStacks();
+      target.peek();
+    });
   }
 
   @Test
@@ -51,10 +53,12 @@ public class QueueUsingStacksTest {
     assertEquals(3, target.pop());
   }
 
-  @Test(expected = EmptyStackException.class)
+  @Test
   public void popShouldThrowEmptyStackException() {
-    QueueUsingStacks target = new QueueUsingStacks();
-    target.pop();
+    assertThrows(EmptyStackException.class, () -> {
+      QueueUsingStacks target = new QueueUsingStacks();
+      target.pop();
+    });
   }
 
   @Test

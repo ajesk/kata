@@ -2,10 +2,10 @@ package io.acode.leetcode.linkedlist;
 
 import io.acode.leetcode.datastructures.linkedlist.ListNode;
 import io.acode.util.TestUtils;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MergeLinkedListsTest extends TestUtils {
   private ListNode node1;
@@ -14,7 +14,7 @@ public class MergeLinkedListsTest extends TestUtils {
 
   private MergeLinkedLists mll = new MergeLinkedLists();
 
-  @Before
+  @BeforeEach
   public void setUp() {
     node1 = new ListNode(1, 4, 7, 9);
     node2 = new ListNode(3, 5, 8, 12);

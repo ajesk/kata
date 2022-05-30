@@ -1,11 +1,11 @@
 package io.acode.leetcode.binarysearch;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class IntersectionOfTwoArraysIITest {
   IntersectionOfTwoArraysII target = new IntersectionOfTwoArraysII();

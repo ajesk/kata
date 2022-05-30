@@ -1,10 +1,10 @@
 package io.acode.leetcode.binarysearch;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Enumeration;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SearchInRotatedArrayTest {
   SearchInRotatedArray target = new SearchInRotatedArray();

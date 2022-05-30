@@ -1,9 +1,9 @@
 package io.acode.codewars;
 
 import io.acode.util.TestUtils;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SalesmansTravelTest extends TestUtils {
     String ad = "123 Main Street St. Louisville OH 43071,432 Main Long Road St. Louisville OH 43071,786 High Street Pollocksville NY 56432,"

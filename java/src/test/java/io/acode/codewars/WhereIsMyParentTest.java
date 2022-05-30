@@ -1,18 +1,20 @@
 package io.acode.codewars;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
 
-public final class WhereIsMyParentTest {
-    private static void test(final String expected, final String input) {
-        assertEquals("For input \"" + input + '"', expected, WhereIsMyParent.findChildren(input));
-    }
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-    @Test public void basicTests() {
-        test("AaBb", "abBA");
-        test("AaaaaaZzzz", "AaaaaZazzz");
-        test("AaBbbCcc", "CbcBcbaA");
-        test("FfUuuuXx", "xXfuUuuF");
-        test("", "");
-    }
+final class WhereIsMyParentTest {
+  private static void test(final String expected, final String input) {
+    assertEquals(expected, WhereIsMyParent.findChildren(input), "For input \"" + input + '"');
+  }
+
+  @Test
+  void basicTests() {
+    test("AaBb", "abBA");
+    test("AaaaaaZzzz", "AaaaaZazzz");
+    test("AaBbbCcc", "CbcBcbaA");
+    test("FfUuuuXx", "xXfuUuuF");
+    test("", "");
+  }
 }

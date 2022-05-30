@@ -2,9 +2,9 @@ package io.acode.leetcode.linkedlist;
 
 import io.acode.leetcode.datastructures.linkedlist.ListNode;
 import io.acode.leetcode.linkedlist.AddTwoNumbers;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AddTwoNumbersTest {
 
