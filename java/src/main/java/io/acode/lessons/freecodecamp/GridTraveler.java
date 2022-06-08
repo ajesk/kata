@@ -1,4 +1,4 @@
-package io.acode.other;
+package io.acode.lessons.freecodecamp;
 
 import java.util.HashMap;
 import java.util.Map;

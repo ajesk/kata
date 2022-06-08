@@ -1,5 +1,6 @@
-package io.acode.other;
+package io.acode.lessons.freecodecamp;
 
+import io.acode.lessons.freecodecamp.GridTraveler;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
