@@ -20,8 +20,8 @@ public class BestSumTest {
 
   @Test
   void testSimplePath() {
-    assertTrue(listEquals(List.of(1,2), target.bestSum(3, new int[]{1,2})));
-    assertEquals(List.of(3), target.bestSum(3,new int[]{1,2,3}));
+    assertTrue(listEquals(List.of(1, 2), target.bestSum(3, new int[]{1, 2})));
+    assertEquals(List.of(3), target.bestSum(3, new int[]{1, 2, 3}));
   }
 
   @Test
@@ -30,8 +30,13 @@ public class BestSumTest {
   }
 
   @Test
+  void testAnotherPath() {
+    assertTrue(listEquals(List.of(3, 5), target.bestSum(8, new int[]{3, 2, 5})));
+  }
+
+  @Test
   void testShortestPathExample() {
-    assertEquals(List.of(7), target.bestSum(7, new int[]{5,3,4,7}));
+    assertEquals(List.of(7), target.bestSum(7, new int[]{5, 3, 4, 7}));
   }
 
   @Test
